@@ -20,7 +20,6 @@ export class PokemonListComponent implements OnInit {
   async pokemons_details(url:string){
 
     this.pokemons = await this.pokemonsService.getPokemons(url).toPromise();
-    console.log(this.pokemons);
     for(var key in this.pokemons)
    {
       if(key=="results" && this.flag){
@@ -32,9 +31,7 @@ export class PokemonListComponent implements OnInit {
          }
 
       if(key=="results" && !this.flag){
-        for(var i of this.pokemons[key]){
-          console.log("this.flag=",this.flag)
-        
+        for(var i of this.pokemons[key]){        
             this.count-=1;
           }
           
@@ -61,7 +58,6 @@ export class PokemonListComponent implements OnInit {
 async searchBar(){
   let param=this.searchBarform.value.param
   let searchres=await this.pokemonsService.searchbar(param).toPromise();
-  console.log(" not found",searchres)
   this.pokemonsService.searchRes=searchres;
   this.router.navigate(['/pokemon',param]);
 }
