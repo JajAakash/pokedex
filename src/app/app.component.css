@@ -1,0 +1,12 @@
+.page-footer{
+    background-color: rgb(12, 180, 180);
+    margin-top: 20px;
+    margin-bottom: 3px;
+    color: whitesmoke
+}
+.page-footer a {
+    color: #ffffff;
+    text-decoration: none !important;
+    background-color: transparent;
+    -webkit-text-decoration-skip: objects;
+}

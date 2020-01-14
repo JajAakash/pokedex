@@ -1,0 +1,54 @@
+<nav class="navbar navbar-expand-lg" style="margin-bottom:20px">
+  <a class="navbar-brand " href="#"><img class="imglogo" src="/assets/poklogo.png" alt=""></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#"><i class="fa fa-home"></i>&nbsp;Home<span class="sr-only"></span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#"><i class="fa fa-user-circle" aria-hidden="true"></i>&nbsp;My Profile</a>
+    </ul>
+    <form [formGroup]="searchBarform" class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2 box" type="search" formControlName="param" placeholder="Search by Id or Name" aria-label="Search">
+      <button class="btn btn-outline-light" (click)="searchBar()"type="submit">Search</button>
+    </form>
+  </div>
+</nav>
+<!-- navbar Ends here -->
+
+<div class="container-fluid col-md-11">
+  <div class="row">
+    <div class="card">
+      <div class="card-body">
+          <div class="row">
+              <div class="col-md-3" *ngFor="let pokemon of pokemons.results; let i = index" style="margin-bottom: 2ex">
+                  <a role="button" (click)="desc(pokemon.url,pokemon.name)" class="card" >
+                      <img src="/assets/pokemon1.jpeg" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <div *ngIf="count==20">
+                            <span class="hash">&#35;{{(count+(i+1))-count}}</span><br>
+                        </div>
+                        <div *ngIf="count>20">
+                            <span class="hash">&#35;{{(count+(i+1))-20}}</span><br>
+                        </div>
+                        
+                        <h4 class="card-title cap_name">{{pokemon.name}}</h4>
+                      </div>
+                    </a>
+              </div>
+          </div>
+      </div>
+      
+    </div>
+  </div>
+</div>
+<div id="prev-nxt_centered_buttons">
+  <button class="box btn btn-prv" role="button" type="submit" (click)="previous(pokemons.previous)">Previous</button>
+  <button class="box btn btn-nxt" role="button" type="submit" (click)="next(pokemons.next)">Pokemon Next</button>
+</div>
+
+<!-- Footer -->

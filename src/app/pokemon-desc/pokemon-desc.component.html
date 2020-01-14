@@ -1,0 +1,49 @@
+<nav class="navbar navbar-expand-lg" style="margin-bottom:20px">
+    <a class="navbar-brand" href="#"><img class="imglogo" src="/assets/poklogo.png" alt=""></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#"><i class="fa fa-home"></i>&nbsp;Home<span class="sr-only"></span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#"><i class="fa fa-user-circle" aria-hidden="true"></i>&nbsp;My Profile</a></li>
+    </ul>
+    </div>
+  </nav>
+
+<div class="container col-md-10">
+    <div class="row">
+            <div class="col-md-6">
+                    <div class="card fstcard">
+                        <div class="card-body">
+                            <img src="/assets/pokemon1.jpeg" class="card-img-top" alt="...">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                        <div class="card seccard">
+                            <div class="card-body">
+                                <h4>&#35;{{detailsPoke.id}}&nbsp;{{detailsPoke.name}}</h4>
+                                <h5>Height:&nbsp;<span id="ht-wt">{{detailsPoke.height}}&nbsp;cm</span></h5>
+                                <h5>Weight:&nbsp;<span id="ht-wt">{{detailsPoke.weight/10}}&nbsp;kg</span></h5>
+                                <p></p><hr>
+                                <h5>Types:</h5>
+                                <div class="type" *ngFor="let type of detailsPoke.types" style="display:inline">
+                                        <span class="badge badge-type">{{type.type.name}}</span>
+                                </div>
+                                <p></p>
+                                <hr><p></p>
+                                <h5>Abilities:</h5>
+                                <div class="ablty" style="float:left;" *ngFor="let ability of detailsPoke.abilities">
+                                        <span class="badge badge-ablty">{{ability.ability.name}}</span>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+    </div>

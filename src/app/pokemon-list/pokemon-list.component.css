@@ -1,0 +1,73 @@
+div .cap_name{
+    text-transform: capitalize;
+    /* font-family: "Flexo-Demi",arial,sans-serif;
+     */
+     font-family: "Flexo-Demi";
+    font-size: 160%
+
+}
+.hash{
+    color: #b8acac;
+    font-size: 99%;
+}
+
+a.card,
+a.card:hover {
+  color: inherit;
+  text-decoration: none;
+}
+.btn-nxt{
+  color: white;
+  background-color: rgb(34,139,34);
+  width: 20ex;
+  height: 5ex;;
+  display: flex; 
+  border: 5ex;
+  justify-content: center;
+  border-radius: 2rem;
+  font-weight: 600;
+  font-size: 1.0rem;
+  font-family:"Flexo-Demi";
+}
+
+.btn-prv{
+  background-color: #808000;
+  color: white;
+  width: 20ex;
+  height: 5ex;;
+  display: flex; 
+  border: 5ex;
+  margin-right: 70px;
+  justify-content: center;
+  border-radius: 2rem;
+  font-weight: 600;
+  font-size: 1.0rem;
+  font-family:"Flexo-Demi";
+  
+}
+#prev-nxt_centered_buttons {  display: flex; justify-content: center; margin-top: 25px; }
+.navbar{
+  color: whitesmoke;
+  background-color: rgb(12, 180, 180);
+}
+.nav-link{
+  color: whitesmoke;
+  font-size: 1.0rem;
+  justify-content: center;
+  font-weight: 600;
+}
+.box{
+  box-shadow: 0 0 0 0px;;
+}
+.navbar-toggler-icon {
+  background-image: url( 
+"data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 0.8)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E"); 
+}
+.navbar-toggler { 
+  border-color: whitesmoke;
+  outline: none;
+    box-shadow: none;
+}
+.imglogo{
+  margin-left: 25px;
+}

@@ -1,0 +1,98 @@
+.seccard{
+    background-color:#1b9cef;
+    margin-top: 20px;
+
+}
+.fstcard{
+    background-color:#1b9cef;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+}
+
+h4{
+    text-transform: capitalize;
+    text-align:center;
+    color: whitesmoke;
+    font-weight: 600;
+    font-size: 1.6rem;
+    font-style: "Flexo-Demi";
+}
+
+h5{
+    color: whitesmoke;
+    font-weight: 600;
+    font-size: 1.2rem;
+    font-style: "Flexo-Medium",arial,sans-serif;
+}
+#ht-wt{
+    color: whitesmoke;
+    font-weight: 550;
+    font-size: 1rem;
+    font-style: "Flexo-Demi",arial,sans-serif;
+}
+ablty{
+    display: inline;
+    margin-left: 20px;
+}
+
+.badge-ablty{
+    width: 7rem;
+    background-color: #f77802;
+    margin-left: 2ex;
+    color: whitesmoke;
+    /* height: 4ex; */
+    font-size: 0.9rem;
+    font-weight: 550;
+    text-transform: capitalize;
+    justify-content: center; 
+    /* display: flex;  */
+}
+
+.badge-type{
+    width: 7rem;
+    background-color: #41b853;
+    margin-left: 2ex;
+    color: whitesmoke;
+    /* height: 4ex; */
+    font-size: 0.9rem;
+    font-weight: 550;
+    text-transform: capitalize;
+    justify-content: center; 
+    /* display: flex;  */
+}
+hr {
+    widows: 130px;
+    margin-top: 0rem;
+    margin-left: -1.3rem;
+    margin-right: -1.3rem;
+    margin-bottom: 1rem;
+    border: 0;
+    border-top: 1px solid whitesmoke;
+  }
+  .row{
+      background-color: #DCDCDC;
+      margin-top: 20px;
+  }
+  .navbar{
+      color: whitesmoke;
+      background-color: rgb(12, 180, 180);
+  }
+  .nav-link{
+    color: whitesmoke;
+    font-size: 1.0rem;
+    justify-content: center;
+    font-weight: 600;
+  }
+  .navbar-toggler-icon {
+    background-image: url( 
+  "data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 0.8)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E"); 
+  }
+  .navbar-toggler { 
+    border-color: whitesmoke;
+    outline: none;
+      box-shadow: none;
+  }
+  .imglogo{
+    margin-left: 25px;
+  }
