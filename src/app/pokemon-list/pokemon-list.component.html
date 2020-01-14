@@ -28,7 +28,8 @@
               <div class="col-md-3" *ngFor="let pokemon of pokemons.results; let i = index" style="margin-bottom: 2ex">
                   <a role="button" (click)="desc(pokemon.url,pokemon.name)" class="card" >
                     <!-- selftaken image for making view more attractive  -->
-                      <img src="/assets/pokemon1.jpeg" class="card-img-top" alt="...">
+                    <a href=""><img src="/assets/pokemon1.jpeg" class="card-img-top" alt="..."></a>
+                      
                       <div class="card-body">
                         <div *ngIf="count==20">
                             <span class="hash">&#35;{{(count+(i+1))-count}}</span><br>
