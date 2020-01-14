@@ -61,9 +61,8 @@ export class PokemonListComponent implements OnInit {
 async searchBar(){
   let param=this.searchBarform.value.param
   let searchres=await this.pokemonsService.searchbar(param).toPromise();
-  console.log(this.pokemonsService.searchRes,searchres)
+  console.log(" not found",searchres)
   this.pokemonsService.searchRes=searchres;
-  console.log(this.pokemonsService.searchRes)
   this.router.navigate(['/pokemon',param]);
 }
   ngOnInit() {

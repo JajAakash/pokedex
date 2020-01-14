@@ -21,7 +21,6 @@ detailsPoke:any
     this.descPokemon();
     }
     else{
-      
       this.detailsPoke=this.pokemonServ.searchRes;
       this.pokemonServ.searchRes=null;
       
